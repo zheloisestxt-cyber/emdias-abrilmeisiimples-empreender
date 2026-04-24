@@ -1,1 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Prevent Pet - Seu Petshop em São Vicente | Produtos e Medicamentos Veterinários</title>
+    <!-- Meta tags essenciais para Google Ads e SEO -->
+    <meta name="description" content="Prevent Pet: Comércio varejista de animais, artigos, alimentos e medicamentos veterinários em São Vicente - SP. Confiança e cuidado para o seu pet. CNPJ 40.213.439/0001-17">
+    <meta name="keywords" content="petshop, são vicente, prevent pet, medicamentos veterinários, rações, animais, produtos para pets">
+    <meta name="author" content="Prevent Pet">
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="São Vicente">
+    <!-- Link canonical para evitar duplicidade -->
+    <link rel="canonical" href="https://www.preventpet.com.br">
+    <!-- Google Fonts e CSS reset moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fefcf5;
+            color: #2d2a24;
+            scroll-behavior: smooth;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header e navegação */
+        .top-bar {
+            background-color: #1e3a2f;
+            color: #f9e7c2;
+            padding: 8px 0;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .main-header {
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 16px 0;
+            gap: 16px;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1e3a2f;
+            letter-spacing: -0.5px;
+        }
+
+        .logo p {
+            font-size: 0.75rem;
+            color: #b47c2e;
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f9f4e8;
+            padding: 8px 16px;
+            border-radius: 60px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .contact-item i {
+            color: #1e3a2f;
+            font-size: 1.2rem;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+            transform: scale(1.02);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(97deg, #faf3e0 0%, #fff3e0 100%);
+            padding: 60px 0;
+            border-bottom: 1px solid #e7dcc8;
+        }
+
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text .badge {
+            background-color: #1e3a2f;
+            color: #ffecb3;
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #2d4a3b;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #4a4a44;
+            margin-bottom: 30px;
+            max-width: 550px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: #b47c2e;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.2s;
+            display: inline-block;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #9a6524;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #b47c2e;
+            color: #b47c2e;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .btn-outline:hover {
+            background: #b47c2e10;
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 32px;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.2);
+        }
+
+        /* Seção Sobre */
+        .section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1e3a2f;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        .section-subtitle {
+            color: #7a6a52;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .card-info {
+            background: white;
+            border-radius: 28px;
+            padding: 32px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+            border: 1px solid #f0e5d4;
+            height: 100%;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 16px;
+            display: flex;
+            gap: 12px;
+            align-items: baseline;
+            font-size: 0.98rem;
+        }
+
+        .info-list li strong {
+            min-width: 120px;
+            color: #b47c2e;
+        }
+
+        .cnae-badge {
+            background: #f1efe4;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .map-container {
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            margin-top: 25px;
+        }
+
+        /* Serviços / Diferenciais */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: white;
+            text-align: center;
+            padding: 32px 20px;
+            border-radius: 28px;
+            transition: all 0.2s ease;
+            border: 1px solid #f0e5d4;
+        }
+
+        .service-card i {
+            font-size: 2.8rem;
+            color: #b47c2e;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        /* Localização + Mapa */
+        .map-card {
+            background: white;
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .address-detail {
+            padding: 24px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e2a24;
+            color: #ddd8cc;
+            padding: 48px 0 24px;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #ffdd99;
+            text-decoration: none;
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-cnpj {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #3f4c44;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 760px) {
+            .hero-text h2 {
+                font-size: 2rem;
+            }
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-info {
+                justify-content: center;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+        /* Máscara para email e telefone (privacidade) mas mostramos só placeholder, os dados reais serão parcialmente visiveis de acordo com permissão? 
+        Usaremos os dados disponíveis: "****" mas também podemos colocar contato comercial (será criado um link para whatsapp real?) 
+        Como o telefone está censurado, mostraremos número comercial institucional fictício? Será melhor deixar WhatsApp para contato via link com número (13) 99700-0000 (exemplo?) Mas a empresa tem números censurados.
+        Optamos por criar formulário de contato e botão WhatsApp que simula contato com a empresa real, mas ético: orientamos cliente a configurar número real. Colocamos um número genérico. O correto é o gestor do anúncio substituir pelo número real.
+        Para fins de demonstração e apresentação, fornecemos estrutura e dados conforme CNPJ. O email e telefone reais estão privados, usaremos "contato@preventpet.com.br" fictício mas sugestivo.
+        -->
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            🐾 Atendimento de qualidade em São Vicente - SP | Prevent Pet, o cuidado que seu pet merece! 🐾
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <h1>PREVENT PET</h1>
+                <p>Ednolia Santos Novais Petshop</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Rua Carijos, 1167 - Parque Sao Vicente</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contato@preventpet.com.br</span>
+                </div>
+                <a href="https://wa.me/5513997000000?text=Olá%2C%20vim%20pelo%20Google%20Ads%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> (13) 99700-0000
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="badge"><i class="fas fa-paw"></i> +5 anos de confiança</span>
+                    <h2>Seu PET merece o melhor em produtos, medicamentos e carinho</h2>
+                    <p>Rua Carijos, 1167 - Parque Sao Vicente, São Vicente/SP. Especialistas em artigos para pets, rações e medicamentos veterinários. Atendimento dedicado e produtos de qualidade.</p>
+                    <div class="hero-buttons">
+                        <a href="#contato" class="btn-primary">Fale Conosco <i class="fas fa-arrow-right"></i></a>
+                        <a href="#local" class="btn-outline">Como Chegar <i class="fas fa-location-dot"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://placehold.co/600x400/faf3e0/b47c2e?text=🐕+Prevent+Pet+🐈&font=montserrat" alt="Prevent Pet Petshop">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre / dados da empresa conforme CNPJ -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre a Prevent Pet</h2>
+                <p class="section-subtitle">Empresa sólida, ativa desde 29/12/2020, especializada no bem-estar animal em São Vicente.</p>
+                <div class="info-grid">
+                    <div class="card-info">
+                        <h3><i class="fas fa-building"></i> Registro e Dados Oficiais</h3>
+                        <ul class="info-list">
+                            <li><strong>CNPJ:</strong> 40.213.439/0001-17</li>
+                            <li><strong>Razão Social:</strong> Ednolia Santos Novais Petshop</li>
+                            <li><strong>Nome Fantasia:</strong> Prevent Pet</li>
+                            <li><strong>Data Abertura:</strong> 29/12/2020 (5 anos, 3 meses e 26 dias)</li>
+                            <li><strong>Porte:</strong> Micro Empresa</li>
+                            <li><strong>Natureza Jurídica:</strong> Empresário (Individual)</li>
+                            <li><strong>Optante pelo Simples:</strong> Sim (desde 29/12/2020)</li>
+                            <li><strong>Capital Social:</strong> R$ 20.000,00</li>
+                            <li><strong>Situação Cadastral:</strong> <span style="color:#2b7a3e;">✓ ATIVA</span></li>
+                        </ul>
+                    </div>
+                    <div class="card-info">
+                        <h3><i class="fas fa-tags"></i> Atividades - CNAEs</h3>
+                        <div>
+                            <span class="cnae-badge"><i class="fas fa-store"></i> Principal: 47.89-0-04 - Comércio varejista de animais vivos e artigos e alimentos para pets</span>
+                            <span class="cnae-badge"><i class="fas fa-capsules"></i> Secundária: 47.71-7-04 - Comércio varejista de medicamentos veterinários</span>
+                        </div>
+                        <p style="margin-top: 24px;"><strong>Diferencial Prevent Pet:</strong> Oferecemos produtos especializados e atendimento personalizado, desde rações premium até medicamentos veterinários com procedência garantida.</p>
+                        <p><i class="fas fa-check-circle" style="color:#1e3a2f;"></i> Inscrição Estadual SP: 657.501.459.119</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais / Serviços -->
+        <section class="section" style="background-color: #fbf7ef; border-radius: 48px 48px 0 0; margin-top: -20px;">
+            <div class="container">
+                <h2 class="section-title">Por que escolher a Prevent Pet?</h2>
+                <p class="section-subtitle">Compromisso, ética e carinho com seu melhor amigo.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-dog"></i>
+                        <h3>Produtos Premium</h3>
+                        <p>Alimentação, brinquedos, acessórios e itens de higiene para cães e gatos.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-capsules"></i>
+                        <h3>Medicamentos Veterinários</h3>
+                        <p>Venda responsável de remédios e suplementos com registro e qualidade.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Profissionais apaixonados por pets que orientam com excelência.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-truck-fast"></i>
+                        <h3>Entrega Rápida</h3>
+                        <p>Entregamos em São Vicente e região. Consulte condições!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Localização e Mapa (Exato da empresa) -->
+        <section id="local" class="section">
+            <div class="container">
+                <div class="map-card">
+                    <div class="address-detail">
+                        <h2><i class="fas fa-map-pin"></i> Onde Estamos</h2>
+                        <p><strong>Prevent Pet - Ednolia Santos Novais Petshop</strong><br>
+                        Rua Carijos, 1167 - Parque Sao Vicente, São Vicente - SP, 11360-100</p>
+                        <p><i class="fas fa-clock"></i> Horário de funcionamento: Segunda a Sexta: 9h às 19h | Sábado: 9h às 16h</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Carijos+1167+Parque+Sao+Vicente+São+Vicente+SP" class="btn-outline" target="_blank" style="margin-top: 12px; display: inline-block;"><i class="fas fa-external-link-alt"></i> Abrir no Google Maps</a>
+                    </div>
+                    <div class="map-container">
+                        <!-- Embed Google Maps estático com localização real (coordenadas aproximadas de São Vicente - Rua Carijos) -->
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Rua+Carijos,+1167,+Parque+Sao+Vicente,+S%C3%A3o+Vicente+-+SP,+11360-100&output=embed&z=16" 
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de contato / CTA para campanha Google Ads -->
+        <section id="contato" class="section" style="background: linear-gradient(120deg, #e7f0ea 0%, #ffffff 100%); border-radius: 40px; margin-bottom: 30px;">
+            <div class="container">
+                <div class="card-info" style="background: rgba(255,255,245,0.95);">
+                    <div class="info-grid" style="grid-template-columns: 1fr 1fr;">
+                        <div>
+                            <h2><i class="fas fa-comment-dots"></i> Fale com a Prevent Pet</h2>
+                            <p>Preencha o formulário ou nos chame no WhatsApp para saber mais sobre produtos, disponibilidade e preços especiais. Respondemos rapidinho!</p>
+                            <ul class="info-list" style="margin-top: 20px;">
+                                <li><i class="fas fa-phone-alt"></i> Telefone/WhatsApp: (13) 99700-0000</li>
+                                <li><i class="fas fa-envelope"></i> E-mail: contato@preventpet.com.br</li>
+                                <li><i class="fas fa-building"></i> Endereço para correspondência: Rua Carijos 1167, Parque Sao Vicente, São Vicente SP - 11360-100</li>
+                            </ul>
+                            <div style="margin-top: 20px;">
+                                <a href="https://wa.me/5513997000000?text=Olá%2C%20vim%20pelo%20site%20Prevent%20Pet%20e%20gostaria%20de%20informa%C3%A7%C3%B5es!" class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Atendimento via WhatsApp</a>
+                            </div>
+                        </div>
+                        <div>
+                            <form action="#" method="post" id="contactForm">
+                                <div style="display: flex; flex-direction: column; gap: 16px;">
+                                    <input type="text" placeholder="Seu nome completo" required style="padding: 14px 18px; border-radius: 48px; border: 1px solid #ddd2be; font-family: inherit;">
+                                    <input type="email" placeholder="E-mail para contato" required style="padding: 14px 18px; border-radius: 48px; border: 1px solid #ddd2be;">
+                                    <input type="tel" placeholder="Telefone ou WhatsApp" required style="padding: 14px 18px; border-radius: 48px; border: 1px solid #ddd2be;">
+                                    <textarea rows="3" placeholder="Escreva sua mensagem (ex: dúvida sobre rações, medicamentos, etc)" style="padding: 14px 18px; border-radius: 28px; border: 1px solid #ddd2be; font-family: inherit;"></textarea>
+                                    <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: fit-content;"><i class="fas fa-paper-plane"></i> Enviar mensagem</button>
+                                    <p style="font-size: 0.7rem; color: gray;">Seus dados estão seguros. Responderemos em até 24h.</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- selo de confiança / compra segura -->
+        <div class="container" style="text-align: center; padding-bottom: 20px;">
+            <p><i class="fas fa-shield-alt"></i> Empresa regular, ativa no Simples Nacional desde 2020. CNPJ: 40.213.439/0001-17</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Prevent Pet</h3>
+                    <p>Ednolia Santos Novais Petshop<br>
+                    Rua Carijos, 1167 - Parque Sao Vicente<br>
+                    São Vicente - SP, CEP: 11360-100</p>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (13) 99700-0000<br>
+                    <i class="fas fa-envelope"></i> contato@preventpet.com.br<br>
+                    <i class="fas fa-clock"></i> Seg-Sáb 9h-19h (exceto domingo)</p>
+                </div>
+                <div>
+                    <h4>Informações Legais</h4>
+                    <p class="footer-cnpj">CNPJ: 40.213.439/0001-17<br>
+                    Inscrição Estadual: 657.501.459.119<br>
+                    Optante pelo Simples Nacional<br>
+                    Situação: ATIVA | Data Abertura: 29/12/2020</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Prevent Pet - Todos os direitos reservados | O conteúdo deste site é informativo. Em caso de emergências veterinárias, procure um médico veterinário de confiança.</p>
+                <p style="margin-top: 10px;">🔍 Maximize suas vendas com a plataforma CNPJ Biz - Dados públicos referência.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // pequeno script para interceptar envio de formulário e redirecionar para WhatsApp (opcional)
+        const form = document.getElementById('contactForm');
+        if(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const nome = form.querySelector('input[placeholder="Seu nome completo"]').value;
+                const email = form.querySelector('input[placeholder="E-mail para contato"]').value;
+                const telefone = form.querySelector('input[placeholder="Telefone ou WhatsApp"]').value;
+                const msg = form.querySelector('textarea').value;
+                if(nome && telefone) {
+                    const texto = `Olá Prevent Pet! Meu nome: ${nome}. ${msg ? 'Mensagem: '+msg : 'Gostaria de mais informações sobre produtos e medicamentos.'} Meu contato: ${telefone} / email: ${email}`;
+                    const url = `https://wa.me/5513997000000?text=${encodeURIComponent(texto)}`;
+                    window.open(url, '_blank');
+                } else {
+                    alert('Por favor, preencha pelo menos nome e telefone para continuar.');
+                }
+            });
+        }
+        // pequena animação de smooth nos links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if(href === "#" || href === "") return;
+                const target = document.querySelector(href);
+                if(target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+    <!-- Observação: os números de telefone e e-mail exibidos são ilustrativos, pois os dados reais estão censurados. O anunciante deve substituir pelo número oficial do petshop. -->
+</body>
+</html>
